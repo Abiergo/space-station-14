@@ -27,9 +27,6 @@
       NavSmash: !type:Bool
         true
     #SS220 xeno-buff-update begin
-  - type: ActionGrant
-    actions:
-    - ActionSleep
   - type: ThermalVision
     state: Half
   - type: NoSlip
@@ -100,7 +97,7 @@
     damage:
     #SS220 xeno-buff-update begin
       types:
-        Blunt: 15
+        Blunt: 5
         Slash: 10
     #SS220 xeno-buff-update end
   - type: DamageStateVisuals
@@ -178,7 +175,7 @@
     damage:
       types:
         Blunt: 20
-        Slash: 10
+        Slash: 5
         Structural: 50
     angle: 0
     soundHit:
@@ -309,7 +306,7 @@
     #SS220 xeno-buff-update begin
       types:
         Blunt: 15
-        Slash: 30
+        Slash: 20
         Structural: 70
     angle: 0
     soundHit:
@@ -376,7 +373,7 @@
     #SS220 xeno-buff-update begin
       types:
         Blunt: 15
-        Slash: 25
+        Slash: 20
     #SS220 xeno-buff-update end
   - type: SlowOnDamage
     speedModifierThresholds:
@@ -403,8 +400,8 @@
     useSound:
       path: /Audio/Items/crowbar.ogg
   - type: JumpAbility
-    jumpDistance: 4
-    jumpSound: /Audio/Effects/toss.ogg
+    jumpDistance: 8
+    jumpSound: /Audio/Effects/Footsteps/largethud.ogg
     jumpThrowSpeed: 22
   - type: Telepathy
     canSend: true
@@ -432,7 +429,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Critical
+      100: Critical
       120: Dead
     #SS220 xeno-buff-update end
   - type: MovementSpeedModifier
@@ -441,8 +438,8 @@
     damage:
     #SS220 xeno-buff-update begin
       types:
-        Blunt: 15
-        Slash: 10
+        Blunt: 5
+        Slash: 15
     #SS220 xeno-buff-update end
   - type: Fixtures
     fixtures:
@@ -495,7 +492,7 @@
     thresholds:
       0: Alive
     #SS220 xeno-buff-update begin
-      70: Critical
+      80: Critical
       100: Dead
     #SS220 xeno-buff-update end
   - type: SlowOnDamage
@@ -508,8 +505,8 @@
     rechargeCooldown: 0.75
   - type: BasicEntityAmmoProvider
     proto: BulletAcid
-    capacity: 1
-    count: 1
+    capacity: 3
+    count: 3
   - type: Gun
     fireRate: 0.75
     useKey: false
