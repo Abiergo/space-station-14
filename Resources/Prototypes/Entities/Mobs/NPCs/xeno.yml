@@ -581,7 +581,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: purple_snake
-  - type: DamageStateVisuals 
+  - type: DamageStateVisuals
     states:
       Alive:
         Base: purple_snake
@@ -617,7 +617,7 @@
     angle: 0
     animation: WeaponArcBite
     damage:
-      types: #SS220 xeno-buff-update
+      types:
         Piercing: 5
   - type: SolutionContainerManager
     solutions:
@@ -646,7 +646,7 @@
     state: Half
     visionRadius: 14
   - type: NoSlip
-    #SS220-fauna-update-ended
+      #SS220-fauna-update-ended
   - type: Tag
     tags:
     #- DoorBumpOpener #SS220-fauna-update (muted tag due to changes)
@@ -681,7 +681,6 @@
     maxTransferAmount: 1
 
 # Mob mapped to Xeno Station that can not be ghostrole / pry
-
 
 - type: entity
   name: '"Dale"'
@@ -729,7 +728,7 @@
      collection: AlienClaw
     animation: WeaponArcBite
     damage:
-      types:
+      groups:
         Slash: 5
   - type: DamageStateVisuals
     states:
