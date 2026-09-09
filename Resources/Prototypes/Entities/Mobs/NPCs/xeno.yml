@@ -728,7 +728,7 @@
      collection: AlienClaw
     animation: WeaponArcBite
     damage:
-      groups:
+      types:
         Slash: 5
   - type: DamageStateVisuals
     states:
