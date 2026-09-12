@@ -4,7 +4,7 @@ meta:
   engineVersion: 277.2.1
   forkId: ""
   forkVersion: ""
-  time: 08/31/2026 12:29:28
+  time: 09/12/2026 21:35:28
   entityCount: 233
 maps: []
 grids:
@@ -1564,9 +1564,6 @@ entities:
       state: False
     - type: DeviceLinkSource
       linkedPorts:
-        6:
-        - - Status
-          - Toggle
         37964:
         - - Status
           - Toggle
@@ -1636,7 +1633,6 @@ entities:
     - type: DeviceLinkSink
       invokeCounter: 1
     - type: InsertingMaterialStorage
-      endTime: 0
 - proto: PowerCellRecharger
   entities:
   - uid: 43176
